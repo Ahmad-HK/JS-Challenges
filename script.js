@@ -23,3 +23,14 @@ function handleMerge(e) {
     let merged = array1.concat(array2);
     document.getElementById("output2").innerHTML = merged;
 }
+
+function handleObjectValues(e) {
+    let inputObject = document.getElementById("challenge31").value;
+    let inputKey = document.getElementById("challenge32").value;
+
+    object = JSON.parse(inputObject);
+    if (inputKey in object) found = "Yes";
+    else found = "No";
+
+    document.getElementById("output3").innerHTML = found;
+}
